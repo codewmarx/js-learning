@@ -1,6 +1,6 @@
-<h1 align="center" style="font-family: monospace;">
-  Mark Anthony Garado
-</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/Mark%20Anthony%20Garado-0a0a0a?style=for-the-badge&logo=github&logoColor=white"/>
+</p>
 
 <p align="center">
   🌐 Web Development Enthusiast & Problem Solver <br/>
