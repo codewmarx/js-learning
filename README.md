@@ -8,7 +8,7 @@
   🚀 Exploring both Frontend & Backend technologies
 </p>
 
----
+<hr>
 
 ## 🛠 Tech Stack
 
@@ -23,9 +23,8 @@
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </p>
 
----
+<hr>
 
-## 📊 GitHub Insights
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=codewmarx&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
@@ -39,7 +38,7 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=codewmarx&layout=compact&theme=tokyonight" alt="Top Languages" />
 </p>
 
----
+<hr>
 
 ## ✨ About Me
 
