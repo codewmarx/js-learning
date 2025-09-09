@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Mark%20Anthony%20Garado-0a0a0a?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=00F7FF&width=435&lines=Mark+Anthony+Garado;Full-Stack+Developer;Tech+Explorer+%26+Builder" alt="Typing SVG" />
 </p>
 
 <p align="center">
