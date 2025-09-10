@@ -7,15 +7,15 @@
 </head>
 <body>
     
-    <h3 style="color:rgb(4, 166, 112); font-family: Arial, Helvetica, sans-serif; text-align: center; padding: 30px 15px;">Let's learn javascript slowly by clicking a button and a changed text will be made.</h3>
+    <h3 style="color:rgb(4, 166, 112); font-family: Arial, Helvetica, sans-serif; text-align: center; padding: 30px 15px;">Let's learn javascript slowly by clicking a button to hide and show a text.</h3>
 
     <!-- text -->
     <p id="changedText" style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; text-align: center; color: rgb(181, 7, 7); font-weight: bold;">Beginneer Full Stack Developer</p>
 
     <br>
-    <button style="margin-left: 230px" onclick='document.getElementById("changedText").innerHTML = "Professional Full Stack Developer"'>Click Me to Change!</button>
+    <button style="margin-left: 215px" onclick='document.getElementById("changedText").style.display = "block"'>Click Me to show the text!</button>
 
-    <button style="margin-left: 203px; margin-top: 20px;" onclick='document.getElementById("changedText").style.fontSize ="50px"'>Click Me to increase font size!</button>
+    <button style="margin-left: 219px; margin-top: 20px;" onclick='document.getElementById("changedText").style.display ="none"'>Click Me to hide the text!</button>
 
 </body>
 </html>
