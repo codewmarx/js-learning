@@ -15,7 +15,7 @@ const car = {type:"Toyota", model:"Corolla", color:"Super White"};
 
 // override object property
 car.type = "Hyundai";
-car.color = "Orange";
+car.color = "Black";
 
 // add new object
 car.owner = "Marko.";
