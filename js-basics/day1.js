@@ -1,22 +1,8 @@
 
-// variables
-let x = 5;
-let y = 50;
+    function knowMe() {
+        // statement 1
+        document.getElementById('state1').innerHTML = "Hi, I am Marko Garado, a self-taught programmer."
 
-let result = x * y;
-
-function btnAdd() {
-    document.getElementById("result").innerHTML = "Result: " + result;
-}
-
-function btnClick() {
-    document.getElementById("changedText").style.display = "none";
-}
-
-function btnChange() {
-    document.getElementById("changedText").innerHTML = "<I><b>Veteran Web Developer</b></I>";
-}
-
-function btnAlert() {
-    window.alert("You have clicked a button!");
-}
+        // statement 2
+        document.getElementById('state2').innerHTML = "This time around, I am still a beginneer learning and exploring different technologies."
+    }
