@@ -1,6 +1,23 @@
 
+// constant arrays 
+const cars = ["Toyota", "Volvo", "Honda",];
 
-let x = 5;
-let y = 64;
+cars[0] = "Ford";
+cars[3] = "Tesla";
 
-let result = x  + y;
+cars.push("Hyundai");
+cars.push("Chevrolet");
+
+document.getElementById("cars").textContent = "My cars are: " + cars;
+
+// constant objects
+const car = {type:"Toyota", model:"Corolla", color:"Super White"};
+
+// override object property
+car.type = "Hyundai";
+car.color = "Orange";
+
+// add new object
+car.owner = "Marko.";
+
+document.getElementById("cars").innerHTML = "My car's type is " + JSON.stringify(car);
