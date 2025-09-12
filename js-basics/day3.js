@@ -1,53 +1,45 @@
 
-// js operators
-// addition
-let x = 5;
-let y = 10;
+// operand raised to a certain power by another operand
+// using Math.pow()
+let num1 = 5;
+let power = Math.pow(num1, 10);
+document.getElementById("expression1").innerHTML = "5 raised to the power of 10 = " + power;
 
-let sum = x + y;
+let res = (100 + 2)  * 3;
 
-document.getElementById("p1").innerHTML = "Sum: " + sum;
+document.getElementById("expression2").innerHTML = "PEMDAS Rule = " + res;
 
-// subtraction
-let diff1 = 50;
-let diff2 = 10;
+// assignment operator &
+// assignment operator on strings
+let flName = "Marko"; flName += " Garado";
 
-let diff = diff1 - diff2;
+document.getElementById("expression3").innerHTML = "Concat strings: " + flName;
 
-document.getElementById("p2").innerHTML = "Differrence: " + diff;
+// logical && AND assignment operator
+// replaces if truthy
+let exp1 = 100;
+let y = exp1 &&= false;
 
-// multiplication
-let p1 = 5;
-let p2 = 10;
+document.getElementById("expression4").innerHTML = exp1;
 
-let product = p1 * p2;
+// logical ||= OR assignment operator
+// replaces if falsy
+let value = false;
+let exp = value ||= "marko pogi";
 
-document.getElementById("p3").innerHTML = "Product: " + product;
+document.getElementById("expression5").innerHTML = exp;
 
-// division
-let q1 = 100;
-let q2 = 20
 
-let quotient = q1 / q2;
+// logical ??= coalescing assignment operator
+// assigns the second value if the first value is
+// null or undefined
+let a = null; // only if null or undefined
+let b = a ??= "marko so handsome";
 
-document.getElementById("p4").innerHTML = "Quotient: " + quotient;
+document.getElementById("expression6").innerHTML = a;
 
-// mixed
-let num1 = 500;
-let num2 = (1500 - 500) - num1;
 
-document.getElementById("p5").innerHTML = "Result: 1000 - 500 = " + num2;
-
-// concatenate strings
-let add = 10;
-add += 5;
-
-document.getElementById("p6").innerHTML = "Result: " + add;
-
-// comparison operator/s
-let firstNum = 400; 
-let secNum = 1000;
-
-let isBigger = firstNum < secNum;
-
-document.getElementById("p7").innerHTML = "Is 400 less than 1000? " + isBigger;
+// the ... spread operator
+//  used for spliting arrays,strings into individual elements using variable-name.join();
+const numbers = [1, 2, 3, 4, 5];
+document.getElementById("expression7").innerHTML = "Using 'variable.join': " + numbers.join(" ") + "<br> or with just square brackets: " + [...numbers];
