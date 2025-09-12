@@ -1,45 +1,76 @@
 
-// operand raised to a certain power by another operand
-// using Math.pow()
-let num1 = 5;
-let power = Math.pow(num1, 10);
-document.getElementById("expression1").innerHTML = "5 raised to the power of 10 = " + power;
+// sets of variety of problems
 
-let res = (100 + 2)  * 3;
+// PROBLEM 1
+// Write code to calculate how many grains of rice you’d have if you start with 1 grain and double it every day for 30 days.
 
-document.getElementById("expression2").innerHTML = "PEMDAS Rule = " + res;
+let days = 30;
+let grain = 2;
+let grainsOfRice = Math.pow(grain, days);
 
-// assignment operator &
-// assignment operator on strings
-let flName = "Marko"; flName += " Garado";
+document.getElementById("problem1").innerHTML = "With a grain of 2 each day," + " after " + days + " days, you will have a total of " + grainsOfRice.toLocaleString() + " grains of rice.";
 
-document.getElementById("expression3").innerHTML = "Concat strings: " + flName;
+// PROBLEM 2
+// Calculate the total price if you buy 3 apples (₱10 each) and 2 bananas (₱8 each), then add a ₱5 tax.
+// Check that PEMDAS is respected.
+let apples = 3
+let applePrice = 10;
 
-// logical && AND assignment operator
-// replaces if truthy
-let exp1 = 100;
-let y = exp1 &&= false;
+let bananas = 2;
+let bananaPrice = 8;
 
-document.getElementById("expression4").innerHTML = exp1;
+let tax = 5;
 
-// logical ||= OR assignment operator
-// replaces if falsy
-let value = false;
-let exp = value ||= "marko pogi";
+let totalPrice = (apples * applePrice) + (bananas * bananaPrice) + tax;
 
-document.getElementById("expression5").innerHTML = exp;
+document.getElementById("problem2").innerHTML = "The total price of 3 apples (10 pesos each) and 2 bananas (8 pesos each) is equals to: " + totalPrice;
 
 
-// logical ??= coalescing assignment operator
-// assigns the second value if the first value is
-// null or undefined
-let a = null; // only if null or undefined
-let b = a ??= "marko so handsome";
+// PROBLEM 3
+// Start with a variable message = "Hello".
+// Append "World" using += and show the final string.
+let text1 = "Hello";
+text1 += " World.";
+document.getElementById("problem3").innerHTML = "If you append 'Hello' and 'World' together using different variables and '+=', the result would be: " + text1;
 
-document.getElementById("expression6").innerHTML = a;
+
+// PROBLEM 4
+// You have a variable isLoggedIn = true.
+// Use &&= to assign "Welcome, User!" only if isLoggedIn is truthy.
+let isLoggedIn = true;
+// isLoggedIn &&= "Welcome, User";
+const message = isLoggedIn ? "Logged in! Welcome, User!" : "User is not logged in!";
+document.getElementById("problem4").textContent = "User Status: " + message;
 
 
-// the ... spread operator
-//  used for spliting arrays,strings into individual elements using variable-name.join();
-const numbers = [1, 2, 3, 4, 5];
-document.getElementById("expression7").innerHTML = "Using 'variable.join': " + numbers.join(" ") + "<br> or with just square brackets: " + [...numbers];
+// PROBLEM 5
+// You have a variable username = "".
+// Use ||= to assign a default username like "Guest" if it’s empty or falsy.
+let username = '';
+let auth = username ||= "Guest";
+document.getElementById("problem5").textContent = "Guest Status: " + auth;
+
+
+// PROBLEM 6
+// You have theme = null.
+// Use ??= to assign "light-mode" only if theme is null or undefined.
+let theme = null;
+let color = theme ??= "light-mode";
+document.getElementById("problem6").textContent = "The color of the theme is: " + color;
+
+
+// PROBLEM 7
+// Given an array const nums = [10, 20, 30];,
+// use the spread operator to: Copy it into a new array. Add a new number 40 at the end.
+const nums = [10, 20, 30];
+nums.push(40);
+const newValue = [...nums]
+
+
+document.getElementById("problem7").textContent = "Number of arrays in spread form: " + newValue;
+
+// spreading 'marko' into characters
+const fname = "Marko";
+const newName = [...fname];
+
+document.getElementById("problem8").textContent = "My first name in spread form: " + newName;
