@@ -22,16 +22,20 @@
 
     // Function Problem
     // 1. Create a function that takes a list of exam scores and returns the average score. Then, use that function to find the average of these scores: 90, 85, 78, 92, 88
+    // LONG METHOD
     function computeAverage () {
-        let value1 = Number(document.getElementById("avg1").value);
-        let value2 = Number(document.getElementById("avg2").value);
-        let value3 = Number(document.getElementById("avg3").value);
-        let value4 = Number(document.getElementById("avg4").value);
-        let value5 = Number(document.getElementById("avg5").value);
+        // my optimized version
+        // collect all user input through one class selector
+        let userScores = document.querySelectorAll(".scores"); 
 
-        let average = (value1 + value2 + value3 + value4 + value5) / 5;
+        // tranforms from nodelist into an array list
+        let allScores = Array.from(userScores).map(input => parseFloat(input.value)); 
 
-        document.getElementById("showAvg").innerHTML = "Your total average is: " + average.toFixed(2);
+        let sum = allScores.reduce((acc, val) => acc + val, 0);
+
+        let average = sum / allScores.length;
+
+        document.getElementById("showAvg").innerHTML = "Your total average is: " + average.toFixed(2); // optional for decimal places
     }
     
     
