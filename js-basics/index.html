@@ -8,28 +8,20 @@
 </head>
 <body>
 
-    <!-- <h3>Javascript Objects</h3>
-    <p id="objects"></p>
+    <p onmouseover="this.style.color='red'" style="color: rgb(3, 3, 81);">Working with Javascript Events</p>
+    <p id="date"></p>
 
-    <hr>
-
-    <h3>Javascript Methods</h3>
-    <p id="methods"></p>
-
-    <hr>
-
-    <h3>Javascript Constructor Functions</h3>
-    <p id="constructor"></p> -->
-    <h3>Working with inputs</h3>
-    <p id="usrname"></p>
-
-    <input id="getName" type="text" placeholder="Enter first name"><br>
-    <input id="getlname" type="text" placeholder="Enter last name">
+    <input onkeydown="alert('You have pressed a key!')" placeholder="Enter a key">
+    <br>
+    <button onclick="displayDate()">Current Date</button>
 
     <br>
 
-    <button type="submit" id="mySubmit">Submit</button>
-
+    <select onchange="alert('You have changed a fruit called')">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Mango</option>
+    </select>
 
     <script src="day6.js"></script>
 </body>
