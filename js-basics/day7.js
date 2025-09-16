@@ -1,27 +1,30 @@
 
     // Javascript Arrays
+    // Javascript Simple Problem
+    // 1. Create a program that:
+    // 2. Starts with the cars array.
+    // 3. Lets the user add a new car name (via prompt).
+    // 4. Checks if the car already exists in the array:
+    // 5. If yes → display: "Car already exists in the list!".
+    // 6. If no → add it to the array and update the list.
+    // 7. Always display the total number of cars and the last car added.
+    let carLists = ["Toyota", "Hyundai", "Ford", "Tesla"];
+    // let length = carLists.length;
+
+    let userInput = window.prompt("Enter a new car: ");
+
+    // combined predefined array with user input
+    let combinedArray = carLists.concat(userInput);
     
-    const cars = ["Toyota", "Hyundai", "Ford"];
-    // add another array 
-    cars.push("Tesla");
-    let car = cars[3]
-    // convert array into string
-    let transform = cars.toString();
-    // check data type
-    let type = typeof(transform);
-    // count the length of an array
-    let arrayLength = cars.length;
-    // accessing the last array
-    let lastArray = cars[cars.length - 1];
-    // checks if an array is an array
-    let isArray = Array.isArray(cars);
+    // total length of predefined array and user input
+    let arrayLength = combinedArray.length;
 
-    let header = "Turning arrays into lists"
-    let display = `<h3>${header}</h3><ul>`;
-    // loop through each element in cars
-    for (const x of cars) {
-        display += `<li>${x}</li>`;
+    // last list of the array element
+    let carLast = combinedArray[combinedArray.length - 1];
+    
+    if (carLists.includes(userInput)) {
+        alert("Input already exists!");
+    } else {
+        carLists.push(userInput);
+        document.getElementById("solving").innerHTML = "Updated cars: " + combinedArray + "<br> The length of the elements is " + arrayLength + "<br> The last added car in the element is " + carLast;
     }
-    display += `</ul>`;
-
-    document.getElementById("arrays").innerHTML = "My cars are " + cars + "<br> Its data type is " + type + "<br> Array length is " + arrayLength + "<br> The last element of the array is " + lastArray + "<br>Is cars an Array? " + isArray + `<hr> ${display}`; 
