@@ -23,3 +23,19 @@ let full;
     }
 
     document.getElementById("day11").innerHTML = full;
+
+
+// javascript else statement
+// Use the else statement to specify a block of code to be executed if a condition is false.
+
+const hour = new Date();
+const getHour = hour.getHours(); // get current local time
+let indicator;
+
+    if (getHour > 18) {
+        indicator = "It's evening time!";
+    } else {
+        indicator = "It's day time!";
+    }
+
+    document.getElementById("elseifState").innerHTML = indicator;
