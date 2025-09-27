@@ -1,6 +1,13 @@
 
-    // Javascript Events
+    // Javascript Templates Strings
+    let header  = "My Complete Name";
+    let sepName = ["Mark", "Anthony", "Garado"];
 
-    function displayDate() {
-        document.getElementById("date").textContent = "Hi I am Marko Garado a BSIT 4th year student at ESSU Guiuan";
+    let html = `<h3>${header}</h3><ul>`;
+
+    for (const x of sepName) {
+        html += `<li>${x}</li>`;
     }
+    html += `</ul>`;
+
+    document.getElementById("show").innerHTML = html;

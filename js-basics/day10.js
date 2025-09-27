@@ -118,7 +118,7 @@ let indicate;
     // SWITCH CASE
     // PROBLEM 4
     // Day of the Week Greeting. Write a program using switch that takes a number (1–7) as input (representing days of the week). If it’s 1, display "Sunday - Relax, it’s weekend!" If it’s 2–6, display "Weekday - Stay productive!" If it’s 7, display "Saturday - Enjoy your weekend!" If the number is outside 1–7, display "Invalid day!"
-    let userInput = parseFloat(prompt("Enter a number between 1-7 for the day of the week"));
+    let userInput = parseInt(prompt("Enter a number between 1-7 for the day of the week"));
     let greeting;
 
     switch (userInput) {

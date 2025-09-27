@@ -71,6 +71,6 @@ document.getElementById("problem7").textContent = "Number of arrays in spread fo
 
 // spreading 'marko' into characters
 const fname = "Marko";
-const newName = [...fname];
 
+const newName = [...fname];
 document.getElementById("problem8").textContent = "My first name in spread form: " + newName;
