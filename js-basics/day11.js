@@ -39,3 +39,12 @@ let indicator;
     }
 
     document.getElementById("elseifState").innerHTML = indicator;
+
+
+// Javascript Ternary Operator
+// The conditional ternary operator is a shorthand for writing conditional if...else statements.
+let age = 21;
+
+    let show = (age > 18) ? "You are allowed to drink!" : "You are not allowed to drink!";
+
+    document.getElementById("ternary").innerHTML = show;
