@@ -56,3 +56,38 @@ let age = 21;
     let total = 500 - (price * discount);
 
     document.getElementById("discount").innerHTML = "Product Price: " + price + "<br>Discount: " + discount + "<br> Final Price: " + total;
+
+
+//js switch statement
+// Based on a condition, switch selects one or more code blocks to be executed.
+const deyt = new Date();
+const today = deyt.getDay();
+let message;
+
+    switch(today) {
+        case 0:
+            message = "Sunday";
+            break;
+        case 1:
+            message = "Monday";
+            break;
+        case 2:
+            message = "Tuesday";
+            break;
+        case 3:
+            message = "Wednesday";
+            break;
+        case 4:
+            message = "Thursday";
+            break;
+        case 5:
+            message = "Friday";
+            break;
+        case 6:
+            message = "Saturday";
+            break;
+        default:
+            message = "Invalid";
+    }
+
+    document.getElementById("switch").innerHTML = "Today is " + message;
