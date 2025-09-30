@@ -48,3 +48,11 @@ let age = 21;
     let show = (age > 18) ? "You are allowed to drink!" : "You are not allowed to drink!";
 
     document.getElementById("ternary").innerHTML = show;
+
+    // price discount
+    let price = 500;
+    let isValidMember = true;
+    let discount = isValidMember ? 0.2 : 0;
+    let total = 500 - (price * discount);
+
+    document.getElementById("discount").innerHTML = "Product Price: " + price + "<br>Discount: " + discount + "<br> Final Price: " + total;
