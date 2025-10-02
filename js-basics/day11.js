@@ -63,7 +63,6 @@ let age = 21;
 const deyt = new Date();
 const today = deyt.getDay();
 let message;
-
     switch(today) {
         case 0:
             message = "Sunday";
@@ -91,3 +90,18 @@ let message;
     }
 
     document.getElementById("switch").innerHTML = "Today is " + message;
+
+
+// js booleans in conditions
+// In JavaScript, a Boolean is a primitive data type that can only have one of two values: true or false
+let awers = new Date();
+let getAwers = awers.getHours();
+let hihi;
+
+    if (getAwers > 18) {
+        hihi = "It's evening already";
+    } else {
+        hihi = "It's daytime!";
+    }
+
+    document.getElementById("booleans").innerHTML = hihi;
