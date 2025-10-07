@@ -3,13 +3,16 @@
 // The while loop loops through a block of code as long as a specified condition is true.
 
 // Mini Project - Countdown Timer (While Loop)
-// Goal: Print numbers from 10 down to 1 using a while loop, then print "Blast off!".
+// Goal: Print numbers from 10 down to 1 using a while loop, then print "Blast off!". Live Countdown
 let timer = 10;
-let text = '';
+const text = document.getElementById("while");
 
-    while (timer > 0) {
-        text += 'Bomb exploding in ' + timer + '\n';
+    const interval = setInterval(() => {
+        if (timer <= 0) {
+            text.innerHTML = "Blast off!";
+            clearInterval(interval);
+            return;
+        }
+        text.innerHTML = `Bomb exploding in ${timer}`;
         timer--;
-    }
-    text += "Blast off";
-    console.log(text);
+    }, 1000);
