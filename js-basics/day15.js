@@ -1,18 +1,13 @@
 
-// javascript while loop
-// The while loop loops through a block of code as long as a specified condition is true.
+// javascript do while loop = variant of while loop
+// The do while loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true. 
 
-// Mini Project - Countdown Timer (While Loop)
-// Goal: Print numbers from 10 down to 1 using a while loop, then print "Blast off!". Live Countdown
-let timer = 10;
-const text = document.getElementById("while");
+let text = '';
+let i = 0;
 
-    const interval = setInterval(() => {
-        if (timer <= 0) {
-            text.innerHTML = "Blast off!";
-            clearInterval(interval);
-            return;
-        }
-        text.innerHTML = `Bomb exploding in ${timer}`;
-        timer--;
-    }, 1000);
+    do {
+        text += "The current number is: " + i + '\n';
+        i++;
+    } while (i < 10); // it runs at least once even if the condition is false from the start;
+
+    console.log(text);
