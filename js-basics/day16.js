@@ -1,13 +1,28 @@
 
 // javascript for loop - are fundamental for tasks like performing an action multiple times
 
-// use a for loop to collect car names from the cars array
+// short & simple exercise using for loop
+// problem : Sum of Numbers
 
-const cars = ["BMW", "Honda", "Rusi", "Ford"];
-let len = cars.length;
-let text = '';
+// Write a program that asks the user for a number (e.g. 5) and then uses a for loop to calculate the sum of all numbers from 1 to that number.
 
-for (let i = 0; i < len; i++) {
-    text += cars[i] + '\n';
-}
-console.log(text);
+const readline = require("readline");
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+}); 
+
+    rl.question("Enter any number: " , (answer) => {
+        numInput = parseInt(answer);
+        let sum = 0;
+
+        for (let i = 1; i <= numInput; i++) {
+            sum += i;
+        }
+        rl.close();
+        console.log(sum);
+    });
+
+
+
