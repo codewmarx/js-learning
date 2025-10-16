@@ -22,3 +22,15 @@ console.log(codePnt);
 // 5. Property accesss []
 let proprty = text[2];
 console.log(proprty);
+
+// 6. js string concat()
+let fname = "Marko";
+let lname = "Garado";
+let fullName = fname.concat(" ", lname);
+console.log(fullName);
+
+// 7. extracting string parts
+// a. js string slice*()
+let food = "Adobobo";
+let extract = food.slice(3, 7);
+console.log(extract);
