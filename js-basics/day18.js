@@ -91,3 +91,21 @@ let mySelf = "Marko is";
 let truth = "pogi";
 let display = mySelf + truth.repeat(3); //returns a string with a number of copies of a string
 console.log(display);
+
+// 17. js string replace() = replaces a specified value with another value in a string
+let header = "Welcome to the world, baby Amella & AMELLA";
+let replace = header.replace(/amella/g, "Princess Jade"); // use /i for case insensitive strings and /g for global search
+console.log(replace);
+
+// 18. js string replaceAll() = allows you to specify a regular expression instead of a string to be replaced.
+let introduction = "Hello, my name is Javascript and I am 70 years old. I love dogs.";
+let rplcAll = introduction
+    .replaceAll("Javascript", "Marko Garado")
+    .replaceAll("70", "21")
+    .replaceAll("dogs", "cats");
+console.log(rplcAll);
+
+// 19. js string spit() = A string can be converted to an array with the split() method
+let tekst = "a b c d e f";
+let myArr = tekst.split("");
+console.log(myArr);
