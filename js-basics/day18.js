@@ -58,3 +58,36 @@ console.log(checker);
 let greeting = "    Good Morning    ";
 let trem = greeting.trim(); //trim() method removes whitespaces
 console.log(greeting.length, trem.length);
+
+// 12. js string trimStart() 
+// let's use the value of let = greeting from 11.
+let startTrem = greeting.trimStart(); // only trims/removes whitespace from the start of a string 
+console.log(startTrem.length);
+
+// 13. js string trimEnd() = removes/trims whitespace from the end of a string
+let endTrem = greeting.trimEnd();
+console.log(endTrem.length);
+
+// 14. js string padding
+// padStart()
+let hrs = 9;
+let transform = hrs.toString();
+let result = transform.padStart(2, "0"); //appends 0 at the start 
+console.log(result);
+
+// 15. padEnd()
+let mns = 5;
+let transformm = mns.toString();
+let resultt = transformm.padEnd(2, "7"); //appends 7 at the end
+console.log(resultt);
+
+// append both hrs and mns
+let appended = "Current time: ";
+let result1 = appended + result + ':' + resultt;
+console.log(result1);
+
+// 16. js string repeat()
+let mySelf = "Marko is";
+let truth = "pogi";
+let display = mySelf + truth.repeat(3); //returns a string with a number of copies of a string
+console.log(display);
